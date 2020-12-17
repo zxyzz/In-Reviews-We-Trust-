@@ -2,6 +2,26 @@
 
 Together, we will try to understand how ratings given on Yelp influence our everyday mobility. 
 
+
+
+<div class="counter">
+  <div class="numbers">
+    <div>0</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+</div>
+
+
+
 You can use the [editor on GitHub](https://github.com/zxyzz/ada_web/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.

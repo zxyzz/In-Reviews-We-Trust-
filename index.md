@@ -16,18 +16,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 
-![Image](https://zxyzz.github.io/ada_web/ma.png)
-
-![Image](https://zxyzz.github.io/ada_web/figure.html)
-
-[Link](https://zxyzz.github.io/ada_web/figure.html)
-
-
 {% if site.tags != "" %}
   {% include figure.html %}
 {% endif %}
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+%<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 
 

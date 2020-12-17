@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to our Webpage
+
+Together, we will try to understand how ratings given on Yelp influence our everyday mobility. 
 
 You can use the [editor on GitHub](https://github.com/zxyzz/ada_web/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 

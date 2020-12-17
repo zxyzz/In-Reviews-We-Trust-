@@ -11,15 +11,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://zxyzz.github.io/ada_web/figure.html)
 
 [Link](https://zxyzz.github.io/ada_web/figure.html)
-<div>
+<code><div>
     <a href="https://plotly.com/~PM_EPFL/1/?share_key=OUJsLQsTNDMKFD2rYvVFFw" target="_blank" title="gdp_per_cap" style="display: block; text-align: center;"><img src="https://plotly.com/~PM_EPFL/1.png?share_key=OUJsLQsTNDMKFD2rYvVFFw" alt="gdp_per_cap" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
     <script data-plotly="PM_EPFL:1" sharekey-plotly="OUJsLQsTNDMKFD2rYvVFFw" src="https://plotly.com/embed.js" async></script>
-</div>
+</div><code>
 
 {% if site.tags != "" %}
   {% include figure.html %}
 {% endif %}
 
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 ABVCD
 ### Markdown
 

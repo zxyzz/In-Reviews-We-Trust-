@@ -16,7 +16,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
     <script data-plotly="PM_EPFL:1" sharekey-plotly="OUJsLQsTNDMKFD2rYvVFFw" src="https://plotly.com/embed.js" async></script>
 </div>
 
-{% include figure.html %}
+{% if site.tags != "" %}
+  {% include figure.html %}
+{% endif %}
 
 ABVCD
 ### Markdown

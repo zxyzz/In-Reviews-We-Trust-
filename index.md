@@ -6,7 +6,9 @@ For our study, we will be using more than **+8M reviews** on **+200k businesses*
 ## A Light Introduction to the Dataset 
 We are using a dataset published by Yelp, one of the most successfull Local Based Social Network today. The idea behind Yelp is quite simple: users share with the rest of the world their experience of any kind of businnesses, from local Mexican Restaurant on the corner of your street to your nearby Funeral Home.  
 
-
+{% if site.tags != "" %}
+  {% include rating_distribution.html %}
+{% endif %}
 
 You can use the [editor on GitHub](https://github.com/zxyzz/ada_web/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -19,10 +21,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://zxyzz.github.io/ada_web/figure.html)
 
 [Link](https://zxyzz.github.io/ada_web/figure.html)
-<code><div>
-    <a href="https://plotly.com/~PM_EPFL/1/?share_key=OUJsLQsTNDMKFD2rYvVFFw" target="_blank" title="gdp_per_cap" style="display: block; text-align: center;"><img src="https://plotly.com/~PM_EPFL/1.png?share_key=OUJsLQsTNDMKFD2rYvVFFw" alt="gdp_per_cap" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="PM_EPFL:1" sharekey-plotly="OUJsLQsTNDMKFD2rYvVFFw" src="https://plotly.com/embed.js" async></script>
-</div><code>
+
 
 {% if site.tags != "" %}
   {% include figure.html %}

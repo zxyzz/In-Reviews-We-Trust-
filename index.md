@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](https://www.google.com/search?q=google+macaron&client=ubuntu&hs=y80&channel=fs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiahuzVzNXtAhUEHOwKHVqQAA0Q_AUoAXoECAcQAw&biw=1408&bih=642#imgrc=aLDlP6ipr6SLgM)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

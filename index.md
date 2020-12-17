@@ -11,7 +11,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://zxyzz.github.io/ada_web/figure.html)
 
 [Link](https://zxyzz.github.io/ada_web/figure.html)
-[Link](https://plotly.com/~PM_EPFL/1/)
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/1.embed"></iframe>
 
 ### Markdown
 

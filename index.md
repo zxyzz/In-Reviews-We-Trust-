@@ -11,7 +11,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://zxyzz.github.io/ada_web/figure.html)
 
 [Link](https://zxyzz.github.io/ada_web/figure.html)
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/1.embed"></iframe>
+<div>
+    <a href="https://plotly.com/~PM_EPFL/1/?share_key=OUJsLQsTNDMKFD2rYvVFFw" target="_blank" title="gdp_per_cap" style="display: block; text-align: center;"><img src="https://plotly.com/~PM_EPFL/1.png?share_key=OUJsLQsTNDMKFD2rYvVFFw" alt="gdp_per_cap" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="PM_EPFL:1" sharekey-plotly="OUJsLQsTNDMKFD2rYvVFFw" src="https://plotly.com/embed.js" async></script>
+</div>
+
+
 
 ### Markdown
 

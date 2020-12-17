@@ -11,6 +11,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![Image](https://zxyzz.github.io/ada_web/figure.html)
 
 [Link](https://zxyzz.github.io/ada_web/figure.html)
+[Link](https://plotly.com/~PM_EPFL/1/)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for

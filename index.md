@@ -4,11 +4,15 @@ Together, we will try to understand how ratings given on Yelp influence everyday
 For our study, we will be using more than **+8M reviews** on **+200k businesses** made by **+196k** users. 
 
 ## A Light Introduction to the Dataset 
-We are using a dataset published by Yelp, one of the most successfull Local Based Social Network today. The idea behind Yelp is quite simple: users share with the rest of the world their experience of any kind of businnesses, from local Mexican Restaurant on the corner of your street to your nearby Funeral Home.  
+We are using a dataset published by Yelp, one of the most successfull Local Based Social Network as of today. On Yelp users share with the rest of the community their experience of any kind of businesses. You can find on Yelp multiple a wide variety of businesses, ranging from local mexican restaurants to the a funeral homes.  
 
 {% if site.tags != "" %}
   {% include rating_distribution.html %}
 {% endif %}
+
+
+
+
 
 You can use the [editor on GitHub](https://github.com/zxyzz/ada_web/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 

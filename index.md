@@ -1,10 +1,10 @@
 # Welcome 
 
-Together, we will try to understand how ratings given on Yelp influence everyday mobility. 
+Together, we will try to understand how ratings given on [Yelp](https://www.yelp.com/dataset/documentation/main?fbclid=IwAR1RgySn5BU9FaD_5TkJ0Rxqs-hIoEQqEC5CSm9kzXka7boJj8YVTRyDvYc) influence everyday mobility. 
 For our study, we will be using more than **+8M reviews** on **+200k businesses** made by **+196k** users. 
 
 ## A Light Introduction to the Dataset 
-We are using a dataset published by Yelp, one of the most successfull Local Based Social Network as of today. On Yelp users share with the rest of the community their experience of any kind of businesses. You can find on Yelp multiple a wide variety of businesses, ranging from local mexican restaurants to the a funeral homes.  
+We are using a dataset published by [Yelp](https://www.yelp.com/dataset/documentation/main?fbclid=IwAR1RgySn5BU9FaD_5TkJ0Rxqs-hIoEQqEC5CSm9kzXka7boJj8YVTRyDvYc), one of the most successfull Local Based Social Network as of today. On Yelp users share with the rest of the community their experience of any kind of businesses. You can find on Yelp multiple a wide variety of businesses, ranging from local mexican restaurants to the a funeral homes.
 
 {% if site.tags != "" %}
   {% include rating_distribution.html %}

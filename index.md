@@ -15,20 +15,22 @@ Next, we plot the number of checkins per category, depending on the rating of ea
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/3.embed"></iframe>
 
-One can see that the most represented category is by far food buisnesses (i.e restaurants and groceries stores), followed by Entertainment (i.e museum, cinemas, art galery...). However, the distribition of the number of checkins per category varies depending on the rating of businesses.
-When we look at the repartition of checkins for each categories, the distribution of checkins varies depending on the category. In the `Plot all Ratings`supblot, for food businesses, we can see that the checkin distribution is mostly centered around 4-stars ratings, while for automotive businesses, checkins are more spread-out across all ratings. 
-This lead us to our first discovery (and hopefully not the last): TO DO    
+One can see that the most represented category is by far food buisnesses (i.e restaurants and groceries stores), followed by Entertainment (i.e museum, cinemas, art galery...). However,when we look at the repartition of checkins for each categories, the distribution of checkins varies depending on the category. In the `Plot all Ratings`supblot, for food businesses, we can see that the checkin distribution is mostly centered around 4-stars ratings, while for automotive businesses, checkins are more spread-out across all ratings. This yields to different category distribution depending on the business ratings. To see this difference, we encourage you to go through some subplots of the figure above.  
 
-Lets now dive into the real subject!
+Now that we have a rough idea of the data lets dive into the real subject!
 
 ## Are we more likely to travel to good-rated businesses when traveling far from home?
-Our first focal point will be the probability to travel to a good-rated business depending on the distance travelled from home. 
-To 
+Our first focal point will be to study the probability to travel to a well-rated business depending on the distance travelled from home. 
+This is will help us understand how far people are willing to travel for a well-rated business. 
 
-##### How likely we are going to good rated business at a distance d from home?
 {% if site.tags != "" %}
   {% include go_to_good_rated_business.html %}
 {% endif %}
+
+The plot above shows that up-to the 100km mark we are *increasingly likely to visit a well-rated palce*, however, past the 100km mark, this 
+
+This lead us to our first discovery (and hopefully not the last): TO DO    
+
 
 ##### How likely we give good ratings to business at a distance d from home?
 {% if site.tags != "" %}

@@ -33,8 +33,11 @@ Next, we plot the number of checkins per category, depending on the rating of ea
 
 
 ### Word of Mouth Impact on Mobility
+
+
+##### Evolution of friends' reviews influence on mobility
 {% if site.tags != "" %}
-  {% include weekday.html %}
+  {% include friends_recomm_influence.html %}
 {% endif %}
 
 

@@ -2,15 +2,8 @@
 
 Together, we will try to understand how ratings given on [Yelp](https://www.yelp.com/dataset/documentation/main?fbclid=IwAR1RgySn5BU9FaD_5TkJ0Rxqs-hIoEQqEC5CSm9kzXka7boJj8YVTRyDvYc) influence everyday mobility. 
 For our study, we will be using more than **+8M reviews** on **+200k businesses** made by **+196k** users. <br>
-![Image](/img.jpeg)
-
 <br>
-![Image](/1.png)
-
-<br>
-![Image](/2.png)
-<br>
-![Image](/3.jpg)
+![Image](/img.jpg)
 
 ## Previous Work
 This is a creative extension on the [paper](http://ial.eecs.ucf.edu/Reading/Papers/Friendship%20and%20Mobility%20User%20Movement%20In%20Location-Based%20Social%20Networks.pdf) **Friendship and Mobility: User Movement in Location-Based Social Networks** by **Eunjoon Cho**, **Seth A. Myers** and **Jure Leskovec**, which attempts to model human mobility using periodic and friendship induced movement. The dataset used on this paper is pretty similar to ours, based mainly on check-ins made on two local based social networks (Brightkite and Gowalla) as well as some cell phone communication data. One of the main points of this paper was studying the influence of friendship on mobility. Interestingly, the paper came to the conclusion that friendships do have a pretty notable impact on mobility, especially long distance travelling. Here are some very interesting insights shown in the paper :

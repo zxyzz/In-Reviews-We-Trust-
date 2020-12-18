@@ -10,6 +10,12 @@ We are using a dataset published by Yelp, one of the most successfull Local Base
   {% include rating_distribution.html %}
 {% endif %}
 
+As we can see on the figure above, the mean rating of a business is 3.5. Also, as we can see, the 25k lowest reviews have a rating below 2 and the 25k best rated businesses have a grade of 5. Hence, we will consider a **bad rating, a rating less or equal to 2** and a **good rating, a rating equal to 5**. \
+Next, we plot the number of checkins per category, depending on the rating of each business.
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/3.embed"></iframe>
+
+
 
 
 

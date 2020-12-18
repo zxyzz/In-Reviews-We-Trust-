@@ -32,7 +32,7 @@ This is will help us understand how far people are willing to travel for a well-
 The plot above shows that up-to the 100km mark we are *increasingly likely to visit a well-rated palce*, however, past the 100km mark, this probability decreases sharply (with respect to the overall difference of the graph). 
 
 
-> This lead us to our first discovery (and hopefully not the last): for well know places (in a 100 km around their home) we are willing to travel further to go to a > well rated business. However, past that 100 km mark, people seem to enter in less known area, and the importance of the business grade is less significant. 
+> This lead us to our first discovery (and hopefully not the last): for well known places (in a 100 km around their home) we are willing to travel further to go to a > well rated business. However, past that 100 km mark, people seem to enter in less known area, and the importance of the business grade is less significant. 
 
 
 ### Word of Mouth Impact on Mobility

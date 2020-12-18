@@ -24,6 +24,7 @@ Our first focal point will be to study the probability to travel to a well-rated
 This is will help us understand how far people are willing to travel for a well-rated business. 
 
 ```
+Hello its me, I was wondering
 $$P(business_grade = 5 | d)$$
 ```
 

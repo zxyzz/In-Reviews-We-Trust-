@@ -23,9 +23,9 @@ Now that we have a rough idea of the data lets dive into the real subject!
 Our first focal point will be to study the probability to travel to a well-rated business depending on the distance travelled from home. 
 This is will help us understand how far people are willing to travel for a well-rated business. 
 
-'''
-$P(business_grade = 5 | d)$
-'''
+```
+$$P(business_grade = 5 | d)$$
+```
 
 {% if site.tags != "" %}
   {% include go_to_good_rated_business.html %}

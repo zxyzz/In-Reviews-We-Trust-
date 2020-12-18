@@ -32,6 +32,7 @@ One can see that the most represented category is by far food businesses (i.e re
 Now that we have a rough idea of the data let's dive into the real subject!
 
 ---
+
 ## Are we more likely to travel to good-rated businesses when traveling far from home?
 Our first focal point will be to study the probability to travel to a well-rated business depending on the distance travelled from home ($P(business_grade = 5 | distance)$). 
 This will help us understand how far people are willing to travel for a well-rated business. 
@@ -45,6 +46,7 @@ The plot above shows that up-to the 100km mark we are increasingly likely to vis
 
 > This leads us to our first discovery (and hopefully not the last): for well known places (in a 100 km around their home) we are willing to travel further to go to a > well rated business. However, past that 100 km mark, people seem to enter in less known area, and the importance of the business grade is less significant. 
 
+---
 
 ## Word of Mouth Impact on Mobility
 The past conclusion shows that mean ratings published on businesses Yelp pages are a real incentive to move to further places up-to the 100 km mark. So one could think: that’s it, I don’t need to brush up my public online image for user’s that are living far away. 

@@ -6,13 +6,13 @@ For our study, we will be using more than **+8M reviews** on **+200k businesses*
 ![Image](/img.jpg)
 
 ## Previous Work
-This is a creative extension on the [paper](http://ial.eecs.ucf.edu/Reading/Papers/Friendship%20and%20Mobility%20User%20Movement%20In%20Location-Based%20Social%20Networks.pdf) **Friendship and Mobility: User Movement in Location-Based Social Networks** by **Eunjoon Cho**, **Seth A. Myers** and **Jure Leskovec**, which attempts to model human mobility using periodic and friendship induced movement. The dataset used on this paper is pretty similar to ours, based mainly on check-ins made on two local based social networks (Brightkite and Gowalla) as well as some cell phone communication data. One of the main points of this paper was studying the influence of friendship on mobility. Interestingly, the paper came to the conclusion that friendships do have a pretty notable impact on mobility, especially long distance travelling. Here are some very interesting insights shown in the paper :
-* The probability of visiting a friend’s home reaches a plateau after the first 100km (around 0,3)
+This is a creative extension on the [paper](http://ial.eecs.ucf.edu/Reading/Papers/Friendship%20and%20Mobility%20User%20Movement%20In%20Location-Based%20Social%20Networks.pdf) ***Friendship and Mobility: User Movement in Location-Based Social Networks*** by **Eunjoon Cho**, **Seth A. Myers
+** and **Jure Leskovec**, which attempts to model human mobility using periodic and friendship induced movement. The dataset used on this paper is pretty similar to ours, based mainly on check-ins made on two local based social networks (Brightkite and Gowalla) as well as some cell phone communication data. One of the main points of this paper was studying the influence of friendship on mobility. Interestingly, the paper came to the conclusion that friendships do have a pretty notable impact on mobility, especially long distance travelling. Here are some very interesting insights shown in the paper :
+*The probability of visiting a friend’s home reaches a plateau after the first 100km (around 0,3)
 * If people moved randomly, then the farther away their are from their home, then the least likely they are to be in the vicinity of a friend
-* The two above insights lead to the following conclusion: as the distance from home grows, so does the influence of friends. Indeed long distance travel is often linked to existing friendships.
+*The two above insights lead to the following conclusion: as the distance from home grows, so does the influence of friends. Indeed long distance travel is often linked to existing friendships.
 
-> In our work, we will be adding another component to this analysis, by using a dataset containing ratings : do business ratings affect our mobility ? How does  a rating from a friend affect our mobility? All of this could be some very valuable information for business owners when it comes to their online presence on apps like Yelp!
-
+In our work, we will be adding another component to this analysis, by using a dataset containing ratings : do business ratings affect our mobility ? How does  a rating from a friend affect our mobility? All of this could be some very valuable information for business owners when it comes to their online presence on apps like Yelp!
 ---
 
 ## A Light Introduction to the Dataset 
@@ -71,49 +71,57 @@ We will now try to leverage the probability of visiting a friend’s recommended
   {% include evolution_weekday.html %}
 {% endif %}
 
-As we can see on the different subplots, week-days do not influence the weight of a friend’s review on our mobility: no matter the day, a business recommended by our friends still has a greater chance of being visited than other businesses. 
+As we can see on the different subplots, week-days do not influence the weight of a friend’s review on our mobility: no matter the day, a user will be quite likely to visit a business that has been well reviewed by a friend before, way more than a business that got bad reviews from friends. 
 
 > The word of mouth effect is not time dependent, no matter the day, it's always a strong driving force behind a user's mobility. 
 
 #### Evolution of friends' reviews influence on mobility according to categories of business
-Right. So leveraging the probability of visiting a friend's well-reviewed business appeared to be somewhat inconclusive. However, we will now try to single out categories of businesses that should be especially aware of the word-of-mouth effect.    
-To do so, we will plot for each category the probability to visit a friend’s well/poorly-reviewed business. 
+Right. So leveraging the probability of visiting a friend's well-reviewed business with week-days is somewhat inconclusive. However, we will now try to single out categories of businesses that should be especially aware of the word-of-mouth effect.    
+To do so, we will plot for each category the probability that when traveling to a certain distance we will visit a friend’s well/poorly-reviewed business. 
  
 {% if site.tags != "" %}
   {% include evolution_category.html %}
 {% endif %}
 
-We strongly encourage you to scroll through the different subplots of the figure above, results are quite surprising and good!    
-Real estate agents or manufacturing, first good news. 
+We strongly encourage you to scroll through the different subplots of the figure above, results are quite surprising and interesting!    
+For the categories Real Estate and Manufacturing, both the probabilities of doing a check in after a good friend review and bad friend review get really close to each other as distance gets higher. This means that as distance gets higher the opinion of a friend on a business isn't really important for these categories.  
+In sharp contrast to the Real Estate category stand categories such as Food or Entertainment. These are the two categories with the biggest gap between the two curves. Meaning that the friend's opinion has the most influence here, regardless of the distance, which is what we would have expected for those two categories. Indeed, food and entertainment particularly, if well reviewed by friends, are more likely to make people move further: if an excellent restaurant or a great escape game a friend recommended is far away, the user still might go (when it wouldn't really if the friend gave bad reviews).
 
+> Depending on the business category, friend’s reviews have more or less importance. So the word-of-mouth effect only applies to some categories, with a variable degree of importance.  
 
-Depending on the categories the influence of bad and good friends reviews changes. We will not go over all categories but let's note a few intersting tendencies. 
-The most intersting plots are for the categories Real Estate and Manufacturing, where both the probabilities of doing a check in after a good friend review and bad friend review get really close to each other as distance gets higher. This means that as distance gets higher the opinion of a friend on a business isn't really important. We could see this as: even if the friend reviews are (or bad), if there are too far, some type of business are not worth the long distance travelling, which is understandable for Real Estate or Manufacturing.
-The categories with the biggest gaps between the two curves are Food and Entertainment, meaning that the friends opinion have the most influence here, regardless of the distance, which is what we would have expceted for those two categories. Indeed, food and entertainment particularly, if well reviewed by friends, are more likely to make people move further: if an excellent restaurant or a great escape game a friend recommended is far away, the user still might go (when it wouldn't really if the friend gave bad reviews).
+---
 
+## Influence of Weekdays on Mobility
+We have seen that depending on weekdays, the influence of friends reviews doesn't really change. This leads us to ask: does mobility change on weekdays, independently on reviews? 
 
-
-
-#### Evolution of friends' reviews influence on mobility according to weekdays
-
-{% if site.tags != "" %}
-  {% include evolution_weekday.html %}
-{% endif %}
-
-
-### Influence of Weekdays on Mobility
 {% if site.tags != "" %}
   {% include weekday_influence.html %}
 {% endif %}
 
+As you can see, the weekday has some form of influence, especially on long distance travels! On the weekends, the probability of travelling to a certain distance goes up pretty consistently as the distance grows, before dropping at the 100 km mark. But for most other weekdays, it’s the other way round: the probability of travelling to a certain distance goes down with the distance before going back up at the 100km mark. This, indeed, is something expected, as during the week-end, people will more likely travel further from home (week-end trips, beach days), but not too far (100 km mark). However on weekdays, we are more likely to stay close to home (school, work), or really far, more than 100km (business trips, vacations).
 
 
+---
 
-
-### "Treated" and "Non-Treated"
+## Do well rated businesses manage to attract more people
+Finally, to wrap up our study, we will place ourselves from the point of view of businesses, and see if businesses that are well-graded attract more people, then businesses poorly-rated. 
+We will monitor the probability that a business attracts n people, leveraged on the fact if its a well-rated business (treated), or a poorly-rated business (control). 
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/8.embed"></iframe>
 
+As we can see on the plot above, the treated businesses (with good reviews) have a higher chance of attracting more people than the ones that were not treated (with good reviews). 
+
+> It appears that treated businesses (with a high mean rating) attract more people then poorly rated businesses. 
+
+However, if we scroll back to the category distribution depending on ratings, we will see that the distribution of businesses per category is quite different depending if you are a well-rated business or a poorly rated business. 
+
+> This means we are not comparing the same type of businesses. 
+
+So now, let’s try to plot the same distributions, but now for each category. 
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
+
+We can see that ratings have a lot of influence on businesses that provide food services or Entertainment services, whereas businesses such as Real Estate agencies are less influenced by ratings.   
+  
+> We can thus refine our previous conclusion: having a good review helps certain categories of businesses and some are immune to bad/good reviews.  
 

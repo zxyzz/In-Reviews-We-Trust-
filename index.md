@@ -6,11 +6,11 @@ For our study, we will be using more than **+8M reviews** on **+200k businesses*
 ## Previous Work
 This is a creative extension on the [paper](http://ial.eecs.ucf.edu/Reading/Papers/Friendship%20and%20Mobility%20User%20Movement%20In%20Location-Based%20Social%20Networks.pdf) **Friendship and Mobility: User Movement in Location-Based Social Networks** by **Eunjoon Cho**, **Seth A. Myers
 ** and **Jure Leskovec**, which attempts to model human mobility using periodic and friendship induced movement. The dataset used on this paper is pretty similar to ours, based mainly on check-ins made on two local based social networks (Brightkite and Gowalla) as well as some cell phone communication data. One of the main points of this paper was studying the influence of friendship on mobility. Interestingly, the paper came to the conclusion that friendships do have a pretty notable impact on mobility, especially long distance travelling. Here are some very interesting insights shown in the paper :
-*The probability of visiting a friend’s home reaches a plateau after the first 100km (around 0,3)
+* The probability of visiting a friend’s home reaches a plateau after the first 100km (around 0,3)
 * If people moved randomly, then the farther away their are from their home, then the least likely they are to be in the vicinity of a friend
-*The two above insights lead to the following conclusion: as the distance from home grows, so does the influence of friends. Indeed long distance travel is often linked to existing friendships.
+* The two above insights lead to the following conclusion: as the distance from home grows, so does the influence of friends. Indeed long distance travel is often linked to existing friendships.
 
-In our work, we will be adding another component to this analysis, by using a dataset containing ratings : do business ratings affect our mobility ? How does  a rating from a friend affect our mobility? All of this could be some very valuable information for business owners when it comes to their online presence on apps like Yelp!
+>In our work, we will be adding another component to this analysis, by using a dataset containing ratings : do business ratings affect our mobility ? How does  a >rating from a friend affect our mobility? All of this could be some very valuable information for business owners when it comes to their online presence on apps >like Yelp!
 ---
 
 ## A Light Introduction to the Dataset 

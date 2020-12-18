@@ -69,6 +69,6 @@ This lead us to our first discovery (and hopefully not the last): TO DO
 
 ### "Treated" and "Non-Treated"
 
-
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
 
 

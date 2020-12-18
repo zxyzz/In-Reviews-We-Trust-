@@ -50,16 +50,46 @@ However, this conclusion would be quite wrong. Yelp reviews are not only passed 
 So we will now study **how a friend recommendation influences our movements**. 
 
 #### Evolution of friends' reviews influence on mobility
+First, we will plot the probability that when we travel far from home to a business, a friend left a positive or negative review on that business.  
+This will help us understand how friend’s recommendations influence our far from home travels.
 
 {% if site.tags != "" %}
   {% include friends_recomm_influence.html %}
 {% endif %}
 
+First, we can see that there is a consistent gap between the probability to travel to a business well-rated by a friend and one poorly rated. So far, good, we are rational, and avoid visiting poorly-rated businesses. 
+We don’t observe the same kick-down past 100 km, showing that reviews made by friends, even for businesses that are located far from our home, are a strong driving force behind our movement. 
 
-### Influence of Weekdays on Mobility
+> It appears that well-reviewed businesses by friends increases quite significantly our chance to visit that business (with respect to other businesses). This effect is also known as the “word of mouth” effect, and we confirm that this effect is not a legend! From a business perspective, taking care of one customer increases the chance that one of his friends will come visit your business!
+
+#### Evolution of friends' reviews influence on mobility according to weekdays
+We will now try to leverage the probability of visiting a friend’s recommended business with week-days. The idea is that depending on the day of the week, the influence of friends reviews might be more or less important, for example during the week-ends, we would expect to see a rise in friends reviews’s influence.
+
 {% if site.tags != "" %}
-  {% include weekday_influence.html %}
+  {% include evolution_weekday.html %}
 {% endif %}
+
+As we can see on the different subplots, week-days do not influence the weight of a friend’s review on our mobility: no matter the day, a business recommended by our friends still has a greater chance of being visited than other businesses. 
+
+> The word of mouth effect is not time dependent, no matter the day, it's always a strong driving force behind a user's mobility. 
+
+#### Evolution of friends' reviews influence on mobility according to categories of business
+Right. So leveraging the probability of visiting a friend's well-reviewed business appeared to be somewhat inconclusive. However, we will now try to single out categories of businesses that should be especially aware of the word-of-mouth effect.    
+To do so, we will plot for each category the probability to visit a friend’s well/poorly-reviewed business. 
+ 
+{% if site.tags != "" %}
+  {% include evolution_category.html %}
+{% endif %}
+
+We strongly encourage you to scroll through the different subplots of the figure above, results are quite surprising and good!    
+Real estate agents or manufacturing, first good news. 
+
+
+Depending on the categories the influence of bad and good friends reviews changes. We will not go over all categories but let's note a few intersting tendencies. 
+The most intersting plots are for the categories Real Estate and Manufacturing, where both the probabilities of doing a check in after a good friend review and bad friend review get really close to each other as distance gets higher. This means that as distance gets higher the opinion of a friend on a business isn't really important. We could see this as: even if the friend reviews are (or bad), if there are too far, some type of business are not worth the long distance travelling, which is understandable for Real Estate or Manufacturing.
+The categories with the biggest gaps between the two curves are Food and Entertainment, meaning that the friends opinion have the most influence here, regardless of the distance, which is what we would have expceted for those two categories. Indeed, food and entertainment particularly, if well reviewed by friends, are more likely to make people move further: if an excellent restaurant or a great escape game a friend recommended is far away, the user still might go (when it wouldn't really if the friend gave bad reviews).
+
+
 
 
 #### Evolution of friends' reviews influence on mobility according to weekdays
@@ -69,10 +99,12 @@ So we will now study **how a friend recommendation influences our movements**.
 {% endif %}
 
 
-#### Evolution of friends' reviews influence on mobility according to categories of business
+### Influence of Weekdays on Mobility
 {% if site.tags != "" %}
-  {% include evolution_category.html %}
+  {% include weekday_influence.html %}
 {% endif %}
+
+
 
 
 
@@ -82,3 +114,4 @@ So we will now study **how a friend recommendation influences our movements**.
 
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
+

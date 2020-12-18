@@ -31,19 +31,14 @@ This is will help us understand how far people are willing to travel for a well-
   {% include go_to_good_rated_business.html %}
 {% endif %}
 
-The plot above shows that up-to the 100km mark we are *increasingly likely to visit a well-rated palce*, however, past the 100km mark, this 
+The plot above shows that up-to the 100km mark we are *increasingly likely to visit a well-rated palce*, however, past the 100km mark, this probability decreases sharply (with respect to the overall difference of the graph). 
 
-This lead us to our first discovery (and hopefully not the last): TO DO    
-
-
-##### How likely we give good ratings to business at a distance d from home?
-{% if site.tags != "" %}
-  {% include give_good_ratings.html %}
-{% endif %}
-
+```
+This lead us to our first discovery (and hopefully not the last): for well know places (in a 100 km around their home) we are willing to travel further to go to a well rated business. However, past that 100 km mark, people seem to enter in less known area, and the importance of the business grade is less significant. 
+```
 
 ### Word of Mouth Impact on Mobility
-
+The past conclusion shows that mean ratings on Yelp are a real incentive to move to further places up-to the 100 km mark. 
 
 ##### Evolution of friends' reviews influence on mobility
 {% if site.tags != "" %}
@@ -70,5 +65,4 @@ This lead us to our first discovery (and hopefully not the last): TO DO
 ### "Treated" and "Non-Treated"
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
-
 

@@ -62,7 +62,8 @@ The past conclusion shows that mean ratings on Yelp are a real incentive to move
 
 ### "Treated" and "Non-Treated"
 
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
-
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/8.embed"></iframe>
+
+
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/5.embed"></iframe>
 

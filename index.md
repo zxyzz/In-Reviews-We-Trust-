@@ -20,26 +20,13 @@ Next, we plot the number of checkins per category, depending on the rating of ea
 
 
 
-You can use the [editor on GitHub](https://github.com/zxyzz/ada_web/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-
-
-{% if site.tags != "" %}
-  {% include figure.html %}
-{% endif %}
-
-%<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-
-
-<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plotly.com/~PM_EPFL/1.embed"></iframe>
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
+
 Syntax highlighted code block
 
 # Header 1

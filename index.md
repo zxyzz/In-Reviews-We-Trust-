@@ -2,7 +2,7 @@
 
 Together, we will try to understand how ratings given on [Yelp](https://www.yelp.com/dataset/documentation/main?fbclid=IwAR1RgySn5BU9FaD_5TkJ0Rxqs-hIoEQqEC5CSm9kzXka7boJj8YVTRyDvYc) influence everyday mobility. 
 For our study, we will be using more than **+8M reviews** on **+200k businesses** made by **+196k** users. 
-
+---
 ## A Light Introduction to the Dataset 
 We are using a dataset published by [Yelp](https://www.yelp.com/dataset/documentation/main?fbclid=IwAR1RgySn5BU9FaD_5TkJ0Rxqs-hIoEQqEC5CSm9kzXka7boJj8YVTRyDvYc), one of the most successfull Local Based Social Network as of today. On Yelp users share with the rest of the community their experience on any kind of businesses. You can find on Yelp a wide variety of businesses, ranging from local mexican restaurants to funeral homes.
 
@@ -19,14 +19,13 @@ One can see that the most represented category is by far food buisnesses (i.e re
 
 Now that we have a rough idea of the data lets dive into the real subject!
 
+---
 ## Are we more likely to travel to good-rated businesses when traveling far from home?
 Our first focal point will be to study the probability to travel to a well-rated business depending on the distance travelled from home. 
 This is will help us understand how far people are willing to travel for a well-rated business. 
 
-```
-Hello its me, I was wondering
-$$P(business_grade = 5 | d)$$
-```
+
+> $$P(business_grade = 5 | d)$$
 
 {% if site.tags != "" %}
   {% include go_to_good_rated_business.html %}

@@ -130,4 +130,9 @@ We can see that ratings have a lot of influence on businesses that provide food 
 --- 
 
 ## Final Words
+Together, we have seen that good mean ratings published on a public business page is an incentive for users to visit that buisness, up-until the 100 km mark. Past this mark, users will not pay so much attention to that mean rating. 
+However, users are still heavily relying on their friend's recommendations. A good recommendation from a friend, increases our probability to visit that place, and this, not matter the distance between the recommended businesses and our home. 
+Finally, we discovered that some categories of businesses are more sensitive to ratings. 
+We hope you enjoyed that little journey with us and that you learned a lot. 
 
+# Have a nice day!
